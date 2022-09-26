@@ -138,6 +138,7 @@ footer {
   appearance: none;
   background-color: hsl(213, 19%, 18%);
   border-radius: 999px;
+  display: block;
   height: 3rem;
   width: 3rem;
   transition: background-color 150ms;
@@ -170,5 +171,16 @@ footer {
 }
 
 .error {
+  margin-bottom: 1.5rem;
+  color: hsl(25, 97%, 53%);
   display: block;
+  flex-direction: row;
+  background: hsl(213, 19%, 18%);
+  border-radius: 999px;
+  padding: 0.75rem 1rem;
+  font-size: 0.9375rem;
+  justify-content: center;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }

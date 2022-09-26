@@ -10,12 +10,14 @@ document.addEventListener("DOMContentLoaded", () => {
       checked = true;
       rating = event.target.value;
       error.textContent = "";
+      error.classList.remove("error");
     })
   );
 
   form.addEventListener("submit", async (event) => {
     if (!checked) {
       error.textContent = "Please select a rating";
+      error.classList.add("error");
     } else {
       window.location.href = `./thanks.html?rating=${rating}`;
     }
